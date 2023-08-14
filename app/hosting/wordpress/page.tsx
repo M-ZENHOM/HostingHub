@@ -13,7 +13,7 @@ import { toast } from '@/components/ui/use-toast'
 import { Metadata } from 'next/types'
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
     title: "WordPress",
     description: "Choose your wordpress host with high quality.",
 }

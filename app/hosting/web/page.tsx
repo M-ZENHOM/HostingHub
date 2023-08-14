@@ -14,7 +14,7 @@ import { Metadata } from 'next/types'
 
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
     title: "Web",
     description: "Choose your web host with high quality.",
 }
