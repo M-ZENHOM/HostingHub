@@ -9,13 +9,6 @@ import { Label } from '@/components/ui/label'
 import React from 'react'
 import { CartItem, useCartStore } from '@/store/cart'
 import { toast } from '@/components/ui/use-toast'
-import { Metadata } from 'next/types'
-
-
-const metadata: Metadata = {
-    title: "VPS",
-    description: "Choose your vps host with high quality.",
-}
 
 const VPSPage = () => {
     const [isAnnual, setYear] = React.useState(false)

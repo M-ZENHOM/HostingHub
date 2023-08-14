@@ -10,13 +10,8 @@ import { Label } from '@/components/ui/label'
 import React from 'react'
 import { CartItem, useCartStore } from '@/store/cart'
 import { toast } from '@/components/ui/use-toast'
-import { Metadata } from 'next/types'
 
 
-const metadata: Metadata = {
-    title: "WordPress",
-    description: "Choose your wordpress host with high quality.",
-}
 const WordPressPage = () => {
     const [isAnnual, setYear] = React.useState(false)
     const { addToCart } = useCartStore()

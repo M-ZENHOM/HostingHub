@@ -10,14 +10,8 @@ import { Label } from '@/components/ui/label'
 import React from 'react'
 import { toast } from '@/components/ui/use-toast'
 import { CartItem, useCartStore } from '@/store/cart'
-import { Metadata } from 'next/types'
 
 
-
-const metadata: Metadata = {
-    title: "Cloud",
-    description: "Choose your cloud host with high quality.",
-}
 
 const CloudPage = () => {
     const [isAnnual, setYear] = React.useState(false)
