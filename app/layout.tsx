@@ -16,8 +16,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+<<<<<<< HEAD
           {children}
           <Toaster />
+=======
+<<<<<<< HEAD
+          {children}
+          <Toaster />
+=======
+          <SiteHeader />
+          {children}
+          <Footer />
+>>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
+>>>>>>> 9e0e5490d27c74a375ccf9ef07fb9ce5434b616a
         </ThemeProvider>
       </body>
     </html>

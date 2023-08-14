@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9e0e5490d27c74a375ccf9ef07fb9ce5434b616a
 "use client"
 import { Wrapper } from '@/components/Wrapper'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../../components/ui/card'
@@ -68,4 +72,21 @@ const WordPressPage = () => {
     )
 }
 
+<<<<<<< HEAD
 
+=======
+export default WordPressPage
+=======
+import { FC } from 'react'
+
+interface pageProps {
+
+}
+
+const page: FC<pageProps> = ({ }) => {
+    return <div>wordpress</div>
+}
+
+export default page
+>>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
+>>>>>>> 9e0e5490d27c74a375ccf9ef07fb9ce5434b616a
