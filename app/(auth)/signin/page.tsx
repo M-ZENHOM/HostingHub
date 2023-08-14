@@ -16,9 +16,13 @@ import {
     TabsTrigger,
 } from "@/components/ui/tabs"
 import { Icons } from '@/components/Icons'
+import { Metadata } from "next/types"
 
 
-
+export const metadata: Metadata = {
+    title: "SignIn",
+    description: 'Login to checkout your hosting.',
+}
 const LoginPage = () => {
     return (
         <Tabs defaultValue="signIn" className="w-full max-w-sm mx-auto ">
