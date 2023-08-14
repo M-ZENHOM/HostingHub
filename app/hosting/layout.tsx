@@ -1,3 +1,5 @@
+import Footer from '@/components/layouts/footer'
+import { SiteHeader } from '@/components/layouts/siteHeader'
 import { FC } from 'react'
 
 interface layoutProps {
@@ -5,7 +7,13 @@ interface layoutProps {
 }
 
 const layout: FC<layoutProps> = ({ children }) => {
-    return <div>{children}</div>
+    return (
+        <main>
+            <SiteHeader />
+            {children}
+            <Footer />
+        </main>
+    )
 }
 
 export default layout

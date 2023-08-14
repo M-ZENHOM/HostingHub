@@ -1,7 +1,6 @@
 "use client"
 import { Wrapper } from '@/components/Wrapper'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../../components/ui/card'
-import { FC } from 'react'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/Icons'
 import { webPlans } from '@/config/site'
