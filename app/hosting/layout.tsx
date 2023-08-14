@@ -1,5 +1,5 @@
-import Footer from '@/components/layouts/footer'
-import { SiteHeader } from '@/components/layouts/siteHeader'
+import Footer from '@/components/footer'
+import { SiteHeader } from '@/components/siteHeader'
 import { FC } from 'react'
 
 interface layoutProps {

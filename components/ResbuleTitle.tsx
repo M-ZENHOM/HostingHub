@@ -13,7 +13,10 @@ const Title = React.forwardRef<HTMLHeadingElement, ResbuleTitleProps>(({ title, 
     </h1>
 })
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
 Title.displayName = "Title"
 
 export default Title
