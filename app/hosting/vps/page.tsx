@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 import { Wrapper } from '@/components/Wrapper'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../../components/ui/card'
@@ -70,3 +71,16 @@ const VPSPage = () => {
 }
 
 export default VPSPage
+=======
+import { FC } from 'react'
+
+interface pageProps {
+
+}
+
+const page: FC<pageProps> = ({ }) => {
+    return <div>VPS</div>
+}
+
+export default page
+>>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
