@@ -70,3 +70,4 @@ const CloudPage = () => {
     )
 }
 
+export default CloudPage
