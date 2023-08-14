@@ -1,8 +1,8 @@
-# [HostingWebsite](https://nike-shoes-ecommerce.vercel.app/)
+# [HostingWebsite](https://hosting-ten.vercel.app)
 
 This is an open source Hosting Website build with Next.js.
 
-[![HostingWebsite](./public/op.png)](https://nike-shoes-ecommerce.vercel.app/)
+[![HostingWebsite](./public/op.png)](https://hosting-ten.vercel.app)
 
 ## Tech Stack
 
