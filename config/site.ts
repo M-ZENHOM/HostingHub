@@ -56,7 +56,6 @@ export const sevicesIntro = [
         price: "20.40",
         href: "/hosting/vps"
     }
-<<<<<<< HEAD
 ]
 export const webPlans = [
     {
@@ -89,6 +88,4 @@ export const webPlans = [
         yearlyPrice: 59.95 * 12,
     },
 
-=======
->>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
 ]

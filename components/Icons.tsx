@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { AlignJustify, CheckIcon, ChevronLeft, ChevronRight, DeleteIcon, EyeIcon, Globe, LayoutGrid, LinkedinIcon, MoonStarIcon, ShoppingCartIcon, Sun, TrashIcon } from "lucide-react";
-=======
-import { AlignJustify, CheckIcon, ChevronLeft, ChevronRight, EyeIcon, Globe, LayoutGrid, LinkedinIcon, MoonStarIcon, Sun } from "lucide-react";
->>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
 
 type IconProps = React.HTMLAttributes<SVGElement>
 
@@ -13,7 +9,6 @@ export const Icons = {
     MobileNavIcon: AlignJustify,
     Check: CheckIcon,
     Eye: EyeIcon,
-<<<<<<< HEAD
     Delete: TrashIcon,
     Cart: ShoppingCartIcon,
     linkedIn: LinkedinIcon,
@@ -24,11 +19,6 @@ export const Icons = {
             <path fill="currentColor" d="M473.16,221.48l-2.26-9.59H262.46v88.22H387c-12.93,61.4-72.93,93.72-121.94,93.72-35.66,0-73.25-15-98.13-39.11a140.08,140.08,0,0,1-41.8-98.88c0-37.16,16.7-74.33,41-98.78s61-38.13,97.49-38.13c41.79,0,71.74,22.19,82.94,32.31l62.69-62.36C390.86,72.72,340.34,32,261.6,32h0c-60.75,0-119,23.27-161.58,65.71C58,139.5,36.25,199.93,36.25,256S56.83,369.48,97.55,411.6C141.06,456.52,202.68,480,266.13,480c57.73,0,112.45-22.62,151.45-63.66,38.34-40.4,58.17-96.3,58.17-154.9C475.75,236.77,473.27,222.12,473.16,221.48Z" />
         </svg>
     ),
-=======
-    linkedIn: LinkedinIcon,
-    leftArrow: ChevronLeft,
-    rightArrow: ChevronRight,
->>>>>>> be8d09698f7c46b805005d946a509057cb29e2fe
     twitter: (props: IconProps) => (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
             <path fill="currentColor" d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144 4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z" />
