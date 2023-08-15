@@ -11,12 +11,16 @@ import {
 } from "@/components/ui/card"
 import { SiteHeader } from "@/components/layouts/siteHeader"
 import Footer from "@/components/layouts/footer"
+import { Metadata } from "next/types"
 
 interface pageProps {
     searchParams: { [key: string]: string | string[] | undefined }
 }
 
-
+export const metadata: Metadata = {
+    title: "Domains",
+    description: "Domains Availability Search!",
+}
 const DomainsPage: FC<pageProps> = async ({ searchParams }) => {
     const search = typeof searchParams.search === 'string' ? searchParams.search : ""
     const domains = await getDomains(search)
