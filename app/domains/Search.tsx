@@ -9,6 +9,7 @@ import Title from '@/components/ResbuleTitle'
 const Search = ({ search }: { search?: string }) => {
     const router = useRouter()
     const initialRender = useRef(true)
+    const domainPattern = /^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/;
 
     const [text, setText] = useState(search)
     const query = useDebounce(text, 1000)
@@ -21,8 +22,10 @@ const Search = ({ search }: { search?: string }) => {
 
         if (!query) {
             router.push(`/domains`)
-        } else {
+        } else if (query.length > 0 && domainPattern.test(query)) {
             router.push(`/domains?search=${query}`)
+        } else {
+            router.push(`/domains`)
         }
     }, [query, router])
 

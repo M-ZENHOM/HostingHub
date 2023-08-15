@@ -1,5 +1,5 @@
 export const siteConfig = {
-    title: "Hosting Website",
+    title: "SupaHosting",
     author: "Mahmoud Zenhom",
     description: "Hosting website built by zenhom"
 }

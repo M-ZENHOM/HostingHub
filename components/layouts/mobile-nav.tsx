@@ -31,7 +31,7 @@ export function MobileNav() {
                     onOpenChange={setOpen}
                 >
                     <Icons.logo className="mr-2 h-4 w-4" />
-                    <span className="font-bold">Hosting Hub</span>
+                    <span className="font-bold">SupaHosting</span>
                 </MobileLink>
                 <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                     <div className="flex flex-col space-y-3">
