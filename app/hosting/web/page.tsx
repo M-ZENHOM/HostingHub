@@ -4,12 +4,12 @@ import { Wrapper } from '@/components/Wrapper'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../../components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/Icons'
-import { webPlans } from '@/config/site'
 import { Switch } from '@/components/ui/switch'
 import { Label } from '@/components/ui/label'
 import React from 'react'
 import { CartItem, useCartStore } from '@/store/cart'
 import { toast } from '@/components/ui/use-toast'
+import { webPlans } from '@/config/fakeData'
 
 
 

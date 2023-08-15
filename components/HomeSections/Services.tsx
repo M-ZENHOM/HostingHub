@@ -5,8 +5,8 @@ import { buttonVariants } from '../ui/button'
 import { Icons } from '../Icons'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { sevicesIntro } from '@/config/site'
 import Title from '../ResbuleTitle'
+import { sevicesIntro } from '@/config/fakeData'
 
 const Services = () => {
     return (

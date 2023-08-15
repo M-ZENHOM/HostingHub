@@ -7,7 +7,7 @@ import Link, { LinkProps } from "next/link"
 import { useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { ScrollArea } from "../ui/scroll-area"
-import { NavbarTabs } from "@/config/site"
+import { NavbarTabs } from "@/config/layouts"
 
 
 

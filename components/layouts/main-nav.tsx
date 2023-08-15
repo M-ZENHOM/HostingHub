@@ -8,8 +8,8 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { ListItem } from "../ui/ListItem"
-import { NavbarTabs } from "@/config/site"
 import Link from "next/link"
+import { NavbarTabs } from "@/config/layouts"
 
 
 export function MainNav() {

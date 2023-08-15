@@ -1,157 +1,86 @@
-import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
-import { Icons } from '../Icons'
 import { Wrapper } from '../Wrapper'
+import { FooterTabs } from '@/config/layouts'
 
 export default function Footer() {
     return (
-        <footer
-            className={cn(
-                "min-h-[30vh] w-full border-t bg-background py-10 text-foreground px-4 md:px-0"
-
-            )}
-        >
+        <footer className="min-h-[30vh] w-full border-t bg-background py-10 text-foreground px-4 md:px-0" >
             <Wrapper>
                 <div className="space-y-8 xl:col-span-2">
-                    <div className="space-y-10">
-                        <div className="flex items-center gap-x-2">
-                            {/* <Icons.logo className="h-6 w-6" /> */}
-                            <h3 className="text-md text-muted-foreground lg:text-xl">
-                                SupaHosting
-                            </h3>
-                        </div>
-                        <div className="flex items-center gap-x-2">
-                            <a
-                                href='/'
-                                target="_blank"
-                                rel="noreferrer"
-                                className="rounded-md p-2 transition-colors hover:bg-foreground/20 active:bg-foreground/30"
-                            >
-                                <span className="sr-only">Github</span>
-                                <Icons.gitHub className="h-5 w-5" />
-                            </a>
-                            <div className="h-8 border-l border-muted-foreground/50" />
-
-                            <a
-                                href='/'
-                                target="_blank"
-                                rel="noreferrer"
-                                className="rounded-md p-2 transition-colors hover:bg-foreground/20 active:bg-foreground/30"
-
-                            >
-                                <span className="sr-only">Twitter</span>
-                                <Icons.twitter className="h-5 w-5 " />
-                            </a>
-                            <div className="h-8 border-l border-muted-foreground/50" />
-
-                            <a
-                                href='/'
-                                target="_blank"
-                                rel="noreferrer"
-                                className="rounded-md p-2 transition-colors hover:bg-foreground/20 active:bg-foreground/30"
-                            >
-                                <span className="sr-only">Linkedin</span>
-                                <Icons.linkedIn className="h-5 w-5" />
-                            </a>
-                        </div>
-                    </div>
+                    {/* <h3 className="text-md text-muted-foreground lg:text-2xl">
+                        SupaHosting
+                    </h3> */}
                     <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-3 xl:mt-0">
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <div>
                                 <h3>Product</h3>
                                 <ul role="list" className="mt-4 space-y-4">
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#features"
-                                        >
-                                            Web Hosting
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#pricing"
-                                        >
-                                            Cloud Hosting
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#pricing"
-                                        >
-                                            VPS Hosting
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#pricing"
-                                        >
-                                            Wordpress Hosting
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#pricing"
-                                        >
-                                            Domains
-                                        </Link>
-                                    </li>
+                                    {FooterTabs.Products.map((fo, i) => (
+                                        <li key={i}>
+                                            <Link
+                                                className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
+                                                href={fo.href}
+                                            >
+                                                {fo.title}
+                                            </Link>
+                                        </li>
+                                    ))}
+
                                 </ul>
                             </div>
                             <div className="mt-10 md:mt-0">
                                 <h3>Company</h3>
                                 <ul role="list" className="mt-4 space-y-4">
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="#pricing"
-                                        >
-                                            About us
-                                        </Link>
-                                    </li>
+                                    {
+                                        FooterTabs.Company.map((fo, i) => (
+                                            <li key={i}>
+                                                <Link
+                                                    className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
+                                                    href={fo.href}
+                                                >
+                                                    {fo.title}
+                                                </Link>
+                                            </li>
+                                        ))
+                                    }
                                 </ul>
                             </div>
                         </div>
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <div>
-                                <h3>Developers</h3>
+                                <h3>Socials</h3>
                                 <ul role="list" className="mt-4 space-y-4">
-                                    <li>
-                                        <a
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href='/'
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            Github
-                                        </a>
-                                    </li>
+                                    {
+                                        FooterTabs.Socials.map((fo, i) => (
+                                            <li key={i}>
+                                                <Link
+                                                    target='_blank'
+                                                    className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
+                                                    href={fo.href}
+                                                >
+                                                    {fo.title}
+                                                </Link>
+                                            </li>
+                                        ))
+                                    }
                                 </ul>
                             </div>
                             <div className="mt-10 md:mt-0">
                                 <h3>Legal</h3>
                                 <ul role="list" className="mt-4 space-y-4">
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="/privacy"
-                                        >
-                                            Privacy
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
-                                            href="/terms"
-                                        >
-                                            Terms
-                                        </Link>
-                                    </li>
+                                    {
+                                        FooterTabs.Legal.map((fo, i) => (
+                                            <li key={i}>
+                                                <Link
+                                                    className="text-sm text-muted-foreground transition-colors duration-200 ease-in-out hover:text-accent-foreground"
+                                                    href={fo.href}
+                                                >
+                                                    {fo.title}
+                                                </Link>
+                                            </li>
+                                        ))
+                                    }
                                 </ul>
                             </div>
                         </div>

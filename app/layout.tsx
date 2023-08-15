@@ -3,15 +3,16 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/toaster'
+import { siteConfig } from '@/config/site'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Hosting Website",
-    template: `%s - Hosting Web`,
+    default: siteConfig.title,
+    template: `%s - ${siteConfig.title}`,
   },
-  description: 'Hosting website built by zenhom',
+  description: siteConfig.description,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
