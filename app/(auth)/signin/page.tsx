@@ -71,7 +71,7 @@ const LoginPage = () => {
             <TabsContent value="signUp">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Sign in</CardTitle>
+                        <CardTitle>Sign up</CardTitle>
                         <CardDescription>
                             Choose your preferred sign up method
                         </CardDescription>
