@@ -38,9 +38,14 @@ const WebPage = () => {
             <div className='grid grid-cols-fluid gap-5'>
                 {webPlans.map((plan) => (
                     <Card key={plan.id} className='space-y-5 py-10 px-2 bg-violet-500/10 hover:border hover:border-violet-500/50 w-full' >
-                        <CardHeader className='text-center' >
-                            <CardTitle className='text-3xl'>{plan.title}</CardTitle>
-                            <CardDescription className='text-xl'>${!isAnnual ? `${plan.monthlyPrice}/mo` : `${(plan.yearlyPrice).toFixed(2)}/yr`}</CardDescription>
+                        <CardHeader className='text-center space-y-8 ' >
+                            <div>
+                                <CardTitle className='text-3xl'>{plan.title}</CardTitle>
+                                <CardDescription className='text-xl'>${!isAnnual ? `${plan.price}/mo` : `${(plan.price * 12).toFixed(2)}/yr`}</CardDescription>
+                            </div>
+                            <Button className='py-6' onClick={() => handleAdd({ id: plan.id, title: plan.title, lists: plan.lists, price: !isAnnual ? plan.price : plan.price * 12 })} variant="default" >
+                                <Icons.Cart className="mr-2 h-4 w-4" /> Add to cart
+                            </Button>
                         </CardHeader>
                         <CardContent className="grid gap-4">
                             <div>
@@ -59,11 +64,6 @@ const WebPage = () => {
                                 ))}
                             </div>
                         </CardContent>
-                        <CardFooter>
-                            <Button onClick={() => handleAdd({ id: plan.id, title: plan.title, lists: plan.lists, price: !isAnnual ? plan.monthlyPrice : plan.yearlyPrice })} variant="default" >
-                                <Icons.Cart className="mr-2 h-4 w-4" /> Add to cart
-                            </Button>
-                        </CardFooter>
                     </Card>
                 ))}
             </div>

@@ -9,11 +9,11 @@ import { Label } from '@/components/ui/label'
 import React from 'react'
 import { toast } from '@/components/ui/use-toast'
 import { CartItem, useCartStore } from '@/store/cart'
-import { webPlans } from '@/config/fakeData'
+import { sharedPlans } from '@/config/fakeData'
 
 
 
-const CloudPage = () => {
+const SharedPage = () => {
     const [isAnnual, setYear] = React.useState(false)
     const { addToCart } = useCartStore()
 
@@ -27,7 +27,7 @@ const CloudPage = () => {
         <Wrapper className='w-full py-20 '>
             <div className='absolute left-0 top-0 bg-gradient-to-br from-violet-500 to-50% w-full h-full -z-10' />
             <div className='text-center py-12 flex flex-col justify-center items-center space-y-5'>
-                <h2 className='font-extrabold text-5xl'>Cloud Hosting</h2>
+                <h2 className='font-extrabold text-5xl'>Shared Hosting</h2>
                 <p className='text-muted-foreground'>Choose from a vriety of affordable, high quality shared hosting service</p>
                 <div className="flex items-center space-x-2">
                     <Label>Monthly Bill</Label>
@@ -36,11 +36,16 @@ const CloudPage = () => {
                 </div>
             </div>
             <div className='grid grid-cols-fluid gap-5'>
-                {webPlans.map((plan) => (
+                {sharedPlans.map((plan) => (
                     <Card key={plan.id} className='space-y-5 py-10 px-2 bg-violet-500/10 hover:border hover:border-violet-500/50 w-full' >
-                        <CardHeader className='text-center' >
-                            <CardTitle className='text-3xl'>{plan.title}</CardTitle>
-                            <CardDescription className='text-xl'>${!isAnnual ? `${plan.monthlyPrice}/mo` : `${(plan.yearlyPrice).toFixed(2)}/yr`}</CardDescription>
+                        <CardHeader className='text-center space-y-8 ' >
+                            <div>
+                                <CardTitle className='text-3xl'>{plan.title}</CardTitle>
+                                <CardDescription className='text-xl'>${!isAnnual ? `${plan.price}/mo` : `${(plan.price * 12).toFixed(2)}/yr`}</CardDescription>
+                            </div>
+                            <Button className='py-6' onClick={() => handleAdd({ id: plan.id, title: plan.title, lists: plan.lists, price: !isAnnual ? plan.price : plan.price * 12 })} variant="default" >
+                                <Icons.Cart className="mr-2 h-4 w-4" /> Add to cart
+                            </Button>
                         </CardHeader>
                         <CardContent className="grid gap-4">
                             <div>
@@ -59,11 +64,7 @@ const CloudPage = () => {
                                 ))}
                             </div>
                         </CardContent>
-                        <CardFooter>
-                            <Button onClick={() => handleAdd({ id: plan.id, title: plan.title, lists: plan.lists, price: !isAnnual ? plan.monthlyPrice : plan.yearlyPrice })} variant="default" >
-                                <Icons.Cart className="mr-2 h-4 w-4" /> Add to cart
-                            </Button>
-                        </CardFooter>
+
                     </Card>
                 ))}
             </div>
@@ -71,4 +72,4 @@ const CloudPage = () => {
     )
 }
 
-export default CloudPage
+export default SharedPage

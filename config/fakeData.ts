@@ -2,25 +2,25 @@
 export const sevicesIntro = [
     {
         title: "Web Hosting",
-        lists: ["User-friendly building tools", "Host unlimited domains", "Perfect for small sites/blogs"],
+        lists: ["20 GB SSD", "Domain name", "30 Mailboxes", "Website Builder", "3 Websites"],
         price: "2.75",
         href: "/hosting/web"
     },
     {
         title: "Wordpress Hosting",
-        lists: ["Host up to 2 websites", "Experience faster load times", "Easy to use WP control panel"],
+        lists: ["10 GB SSD storage", "50k visitors/month", "Free CDN"],
         price: "5.34",
         href: "/hosting/wordpress"
     },
     {
-        title: "Cloud Hosting",
-        lists: ["Up to 2X Faster", "4X More Scalable", "Intuitive Dashboard"],
+        title: "Shared Hosting",
+        lists: ["20 GB SSD", "Domain name", "30 Mailboxes", "Website Builder", "3 Websites"],
         price: "7.99",
         href: "/hosting/cloud"
     },
     {
         title: "VPS Hosting",
-        lists: ["User-friendly building tools", "Host unlimited domains", "Perfect for small sites/blogs"],
+        lists: ["2 CPU cores", "2 GB RAM", "40 GB SSD RAID 10", "1000 GB bandwidth"],
         price: "20.40",
         href: "/hosting/vps"
     }
@@ -29,61 +29,135 @@ export const webPlans = [
     {
         id: 1,
         title: "Starter Plan",
-        lists: ["10GB Storage", "1 Domain name", "512Mb Ram", "5GB Bandwidth", "2 Emails"],
-        monthlyPrice: 2.75,
-        yearlyPrice: 2.75 * 12,
+        lists: ["20 GB SSD", "Domain name", "30 Mailboxes", "Website Builder", "3 Websites"],
+        price: 2.75,
     },
     {
         id: 2,
         title: "Business Plan",
-        lists: ["50GB Storage", "2 Domain name", "2G Ram", "10GB Bandwidth", "5 Emails"],
-        monthlyPrice: 10.95,
-        yearlyPrice: 10.95 * 12
+        lists: ["Unmetered SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "Unlimited websites", "AutoBackup"],
+        price: 10.95,
     },
     {
         id: 3,
         title: "VIP Plan",
-        lists: ["100GB Storage", "4 Domain name", "4G Ram", "20GB Bandwidth", "10 Emails"],
-        monthlyPrice: 38.95,
-        yearlyPrice: 38.95 * 12
-
+        lists: ["50 GB SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "Unlimited websites", "AutoBackup"],
+        price: 38.95,
     },
     {
         id: 4,
         title: "Extra VIP Plan",
-        lists: ["200GB Storage", "8 Domain name", "8G Ram", "40GB Bandwidth", "20 Emails"],
-        monthlyPrice: 59.95,
-        yearlyPrice: 59.95 * 12,
+        lists: ["100 GB SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "AutoBackup & Cloud Storage", "Unlimited websites"],
+        price: 59.95,
+    },
+
+]
+export const sharedPlans = [
+    {
+        id: 1,
+        title: "Starter Plan",
+        lists: ["20 GB SSD", "Domain name", "30 Mailboxes", "Website Builder", "3 Websites"],
+        price: 2.75,
+    },
+    {
+        id: 2,
+        title: "Business Plan",
+        lists: ["Unmetered SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "Unlimited websites", "AutoBackup"],
+        price: 10.95,
+    },
+    {
+        id: 3,
+        title: "VIP Plan",
+        lists: ["50 GB SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "Unlimited websites", "AutoBackup"],
+        price: 38.95,
+    },
+    {
+        id: 4,
+        title: "Extra VIP Plan",
+        lists: ["100 GB SSD", "Domain name", "Unlimited mailboxes", "Website Builder", "AutoBackup & Cloud Storage", "Unlimited websites"],
+        price: 59.95,
+    },
+
+]
+export const vpsPlans = [
+    {
+        id: 5,
+        title: "Pulsar",
+        lists: ["2 CPU cores", "2 GB RAM", "40 GB SSD RAID 10", "1000 GB bandwidth"],
+        price: 9.88,
+    },
+    {
+        id: 6,
+        title: "Pulsar",
+        lists: ["4 CPU cores", "6 GB RAM", "120 GB SSD RAID 10", "3000 GB bandwidth"],
+        price: 15.88,
+    },
+    {
+        id: 7,
+        title: "Magnetar",
+        lists: ["8 CPU cores", "12 GB RAM", "240 GB SSD RAID 10", "6000 GB bandwidth"],
+        price: 28.88,
+    },
+    {
+        id: 8,
+        title: "ExtraMage",
+        lists: ["12 CPU cores", "32 GB RAM", "512 GB SSD RAID 10", "9000 GB bandwidth"],
+        price: 59.88,
+    },
+
+]
+export const wordPressPlans = [
+    {
+        id: 9,
+        title: "EasyWP Starter",
+        lists: ["10 GB SSD storage", "50k visitors/month", "Free CDN"],
+        price: 6.88,
+        discount: 29
+    },
+    {
+        id: 10,
+        title: "EasyWP Turbo",
+        lists: ["50 GB SSD storage", "200k visitors/month", "1.5x more CPU", "1.5x more RAM", "Free CDN", "Free SSL"],
+        price: 12.88,
+        discount: 35
+    },
+    {
+        id: 11,
+        title: "EasyWP Supersonic",
+        lists: ["100 GB SSD storage", "500k visitors/month", "2x more CPU", "2x more RAM", "99.99% uptime guarantee", "Free CDN", "Free SSL"],
+        price: 19.88,
+        discount: 40
+    },
+    {
+        id: 12,
+        title: "EasyWP Ultra",
+        lists: ["200 GB SSD storage", "800k visitors/month", "4x more CPU", "4x more RAM", "99.99% uptime guarantee", "Free CDN", "Free SSL"],
+        price: 39.88,
+        discount: 45
     },
 
 ]
 
 export const summaryData = [
     {
-        title: "Hosting For Every Website",
-        desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, consequuntur vitae,
-        aut ad doloremque veniam harum neque voluptas aliquam hic distinctio ea aut
-        em obcaecati consequatur incidunt ratione iste, voluptatem excepturi.`,
+        title: "Give your idea a home",
+        desc: `Discover our top hosting plans and prices, and get your idea up-and-running online.`,
         btnTitle: "Get Started!",
-        btnHref: "/",
-        img: "/share.svg"
+        btnHref: "/hosting/web",
+        img: "/homeWebsite.svg"
     },
     {
-        title: "In a hurry? let’s start!",
-        desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, consequuntur vitae,
-        aut ad doloremque veniam harum neque voluptas aliquam hic distinctio ea aut
-        em obcaecati consequatur incidunt ratione iste, voluptatem excepturi.`,
+        title: "Keep your site safe",
+        desc: `Take the strain out of website safety with our low-cost, high-performance security products.`,
         btnTitle: "Get Started!",
-        btnHref: "/",
-        img: "/career.svg"
+        btnHref: "/hosting/web",
+        img: "/saveWebsite.svg"
     },
     {
-        title: "Grow with us",
-        desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, consequuntur vitae,
-        aut ad doloremque veniam harum neque voluptas aliquam hic distinctio ea aut
-        em obcaecati consequatur incidunt ratione iste, voluptatem excepturi.`,
+        title: "Make life easier with apps",
+        desc: `Boost your website’s performance with a VPN, a new logo, or anything in between`,
         btnTitle: "Get Started!",
-        btnHref: "/",
-        img: "/growup.svg"
+        btnHref: "/hosting/web",
+        img: "/easyWebsite.svg"
     }
 ]

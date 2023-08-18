@@ -1,10 +1,12 @@
 "use client"
-import { Button } from '../ui/button'
+import { Button, buttonVariants } from '../ui/button'
 import { Icons } from '../Icons'
 import React from 'react'
 import { Wrapper } from '../Wrapper'
 import Image from 'next/image'
 import { summaryData } from '@/config/fakeData'
+import Link from 'next/link'
+import { cn } from '@/lib/utils'
 
 
 const Summary = () => {
@@ -26,13 +28,13 @@ const Summary = () => {
             </div>
             {/* Simple slide just for demo */}
             {summaryData.slice(num, slide).map((sum, i) => (
-                <div key={i} className='flex flex-col-reverse lg:flex-row space-y-5 items-center justify-center lg:justify-between w-full max-w-lg lg:max-w-4xl mx-auto px-6'>
+                <div key={i} className='flex flex-col-reverse lg:flex-row space-y-8 items-center justify-center lg:justify-between w-full max-w-lg lg:max-w-4xl mx-auto px-6'>
                     <div className='space-y-5'>
                         <h1 className='font-extrabold text-4xl tracking-wide'>{sum.title}</h1>
-                        <p className='text-muted-foreground'>{sum.desc}</p>
-                        <Button variant="default">{sum.btnTitle}</Button>
+                        <p className='text-muted-foreground w-full max-w-sm'>{sum.desc}</p>
+                        <Link href={sum.btnHref} className={cn(buttonVariants({ variant: "default" }))}>{sum.btnTitle}</Link>
                     </div>
-                    <Image className='pb-5' width={300} height={300} src={sum.img} alt='' priority />
+                    <Image className='pb-5 w-full max-w-xs h-full  max-h-[16rem]' width={300} height={300} src={sum.img} alt='' priority />
                 </div>
             ))}
         </Wrapper>

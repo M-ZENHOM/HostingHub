@@ -14,7 +14,7 @@ const Services = () => {
             <Title title='Our Hosting' colored='Services' />
             <div className='grid grid-cols-fluid gap-12 lg:gap-5 place-items-center lg:place-items-stretch'>
                 {sevicesIntro.map((plan, i) => (
-                    <Card key={i} className='space-y-5 py-10 px-2 bg-violet-500/10 hover:border hover:border-violet-500/50 w-full' >
+                    <Card key={i} className='space-y-5 py-10 px-2 bg-violet-500/10 hover:border hover:border-violet-500/50 w-full flex flex-col justify-between' >
                         <CardHeader >
                             <CardTitle>{plan.title}</CardTitle>
                             <CardDescription>Starting at only ${plan.price}/mo</CardDescription>

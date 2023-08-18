@@ -5,7 +5,7 @@ import { Wrapper } from '../Wrapper'
 
 export default function NewLetter() {
     return (
-        <Wrapper className='flex flex-col md:flex-row items-center justify-between w-full py-28 space-y-5 md:space-y-0 px-4 '>
+        <Wrapper className='flex flex-col md:flex-row items-center justify-between w-full py-28 space-y-5 md:space-y-0 px-4 md:px-0 '>
             <div className='w-full max-w-lg space-y-2'>
                 <h2 className='font-bold text-lg'>Subscribe to our newsletter</h2>
                 <p className='text-muted-foreground'>Get a summary of what we’ve shipped during the last month, behind the scenes updates, and team picks.</p>

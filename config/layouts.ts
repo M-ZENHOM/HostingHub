@@ -6,8 +6,8 @@ export const NavbarTabs: { title: string; href: string; description: string }[] 
             "Choose from a vriety of affordable, high quality shared hosting service.",
     },
     {
-        title: "Cloud Hosting",
-        href: "/hosting/cloud",
+        title: "Shared Hosting",
+        href: "/hosting/shared",
         description:
             "Choose from a vriety of affordable, high quality shared hosting service.",
     },
@@ -37,8 +37,8 @@ export const FooterTabs = {
             href: "/hosting/web"
         },
         {
-            title: "Cloud Hosting",
-            href: "/hosting/cloud"
+            title: "Shared Hosting",
+            href: "/hosting/shared"
         },
         {
             title: "VPS Hosting",

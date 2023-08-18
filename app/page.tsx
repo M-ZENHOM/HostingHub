@@ -5,6 +5,7 @@ import DataCenters from "@/components/HomeSections/data-centers";
 import Footer from "@/components/layouts/footer";
 import NewLetter from "@/components/HomeSections/news-letter";
 import { SiteHeader } from "@/components/layouts/siteHeader";
+import Frequently from "@/components/HomeSections/Frequently";
 
 export default function Home() {
       return (
@@ -16,6 +17,7 @@ export default function Home() {
                   <Services />
                   <DataCenters />
                   <NewLetter />
+                  <Frequently />
                   <Footer />
             </main>
       )
